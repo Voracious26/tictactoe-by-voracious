@@ -18,7 +18,7 @@ public class TicTacToe {
     public static int imgSize = 150;
     public static boolean gameOver = false;
     public static JTextArea infoArea;
-    public static String welcomeMsg = "It's Tic Tac Toe time. Smexy Sanic vs Smexier Sanic, who will win? Click on a square to make your turn when you're ready.";
+    public static String welcomeMsg = "It's Tic Tac Toe time. Click on a square to make your turn when you're ready.";
         
     public static void main(String args[]){
         

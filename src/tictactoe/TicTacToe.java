@@ -18,6 +18,10 @@ public class TicTacToe {
     public static int imgSize = 150;
     public static boolean gameOver = false;
     public static JTextArea infoArea;
+    
+    public static String xImgUrl = "res/x.png";
+    public static String oImgUrl = "res/o.png";
+	
     public static String welcomeMsg = "It's Tic Tac Toe time. Click on a square to make your turn when you're ready.";
         
     public static void main(String args[]){
@@ -48,8 +52,8 @@ public class TicTacToe {
         JPanel board = new JPanel();
         board.setLayout(new GridLayout(boardSize,boardSize));
         JButton[] buttons = new JButton[boardSize * boardSize]; 
-        ImageIcon xImg = scaleIcon("x.png", imgSize, imgSize);
-        ImageIcon oImg = scaleIcon("o.png", imgSize, imgSize);
+        ImageIcon xImg = scaleIcon(xImgUrl, imgSize, imgSize);
+        ImageIcon oImg = scaleIcon(oImgUrl, imgSize, imgSize);
         for (int i = 0; i < buttons.length; i++) {
             buttons[i] = new JButton();
             buttons[i].putClientProperty("INDEX", i);
